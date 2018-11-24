@@ -15,6 +15,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'sheerun/vim-polyglot'
+Plugin 'trevordmiller/nova-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -98,7 +100,7 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-colorscheme desert
+colorscheme nova
 set background=dark
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -144,6 +146,8 @@ au BufNewFile,BufRead *.js,*.jsx,*.html,*.css,*.scss,*.json,*.ts,*.php:
     \ set expandtab |
     \ set autoindent |
 
+set backspace=indent,eol,start " backspace support
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => SimplyFold (plugin)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -161,3 +165,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " => NERDTree (plugin)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+
+" GIT
+autocmd Filetype gitcommit setlocal spell textwidth=72
