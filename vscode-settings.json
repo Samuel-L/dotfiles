@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "editor.fontFamily": "Hack",
+    "go.gopath": "/Users/samuellundgren/gocode",
+    "editor.cursorBlinking": "solid",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    "explorer.openEditors.visible": 0
+}
