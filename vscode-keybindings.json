@@ -1,20 +1,39 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    {
-        "key": "cmd+k cmd+z",
-        "command": "workbench.action.toggleZenMode"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "workbench.action.nextEditor"
-    },
-    { 
-        "key": "cmd+t",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
-        "key": "cmd+t",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    }
+  {
+    "key": "cmd+k cmd+z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+u cmd+a",
+    "command": "editor.unfoldAll"
+  },
+  {
+    "key": "cmd+u cmd+t",
+    "command": "editor.unfold"
+  },
+  {
+    "key": "cmd+f cmd+t",
+    "command": "editor.fold"
+  },
+  {
+    "key": "cmd+f cmd+a",
+    "command": "editor.foldAll"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "actions.find"
+  },
+  {
+    "key": "cmd+k cmd+right",
+    "command": "workbench.action.moveActiveEditorGroupRight"
+  },
+  {
+    "key": "cmd+k cmd+left",
+    "command": "workbench.action.moveActiveEditorGroupLeft"
+  }
 ]
