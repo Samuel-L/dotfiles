@@ -35,5 +35,6 @@
   {
     "key": "cmd+k cmd+left",
     "command": "workbench.action.moveActiveEditorGroupLeft"
-  }
+  },
+  { "key": "cmd+;", "command": "workbench.action.gotoLine" }
 ]
