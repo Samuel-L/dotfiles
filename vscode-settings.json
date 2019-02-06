@@ -49,5 +49,6 @@
     "editorLineNumber.activeForeground": "#4FFD07"
   },
   "editor.renderWhitespace": "boundary",
-  "editor.renderIndentGuides": true
+  "editor.renderIndentGuides": true,
+  "workbench.editor.highlightModifiedTabs": true
 }
