@@ -1,0 +1,62 @@
+{
+	// General
+	"Import default": {
+		"scope": "javascript,javascriptreact",
+		"prefix": "_id",
+		"body": [
+			"import $2 from \"$1\""
+		],
+		"description": "Default es6 import"
+	},
+	"Import export": {
+		"scope": "javascript,javascriptreact",
+		"prefix": "_ie",
+		"body": [
+			"import { $2 } from \"$1\""
+		],
+		"description": "Import exported item"
+	},
+	"Export default": {
+		"scope": "javascript,javascriptreact",
+		"prefix": "_ed",
+		"body": [
+			"export default $1;"
+		],
+	},
+	"Arrow function": {
+		"scope": "javascript,javascriptreact",
+		"prefix": "_=>",
+		"body": [
+			"const $1 = () => {",
+			"  return (",
+			"    <div>",
+			"      <div></div>",
+			"    </div>",
+			"  );",
+			"};"
+		]
+	},
+	"Export Arrow function": {
+		"scope": "javascript,javascriptreact",
+		"prefix": "_e=>",
+		"body": [
+			"export const $1 = () => {",
+			"  return (",
+			"    <div>",
+			"      <div></div>",
+			"    </div>",
+			"  );",
+			"};"
+		]
+	},
+	// React
+	"React.useEffect": {
+		"scope": "typescriptreact",
+		"prefix": "_useeffect",
+		"body": [
+			"React.useEffect(() => {",
+			"  $1",
+			"}, [$2])$3"
+		]
+	}
+}
