@@ -1,14 +1,25 @@
 {
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
-  "workbench.colorTheme": "Field Lights",
-  "javascript.format.enable": false,
-  "prettier.eslintIntegration": true,
-  "[javascript]": {
-    "editor.formatOnSave": true
+  // Theming
+  "workbench.colorTheme": "Gruvbox Dark Soft",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.cursorBlinking": "solid",
+  "editor.minimap.enabled": false,
+  "editor.showFoldingControls": "always",
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#FD3A07",
+    "editorLineNumber.activeForeground": "#4FFD07"
   },
-  "window.zoomLevel": 0,
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "explorer.confirmDelete": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.renderIndentGuides": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  // Search
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/tmp": true
+  },
+  // File explorer
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -22,39 +33,12 @@
     "**/yarn.lock": true,
     "**/*.pyc": true
   },
-  "search.exclude": {
-    "**/.git": true,
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/tmp": true
-  },
-  "editor.fontFamily": "Hack, monospace",
-  "editor.cursorBlinking": "solid",
-  "editor.minimap.enabled": false,
-  "explorer.openEditors.visible": 0,
-
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/usr/local/bin/black",
+  "explorer.openEditors.visible": 0, // only display the workspace directories in the explorer
+  // Formatters
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": false,
-  "python.linting.enabled": true,
-  "python.linting.flake8Enabled": true,
-  "python.linting.pylintEnabled": false,
-  "python.sortImports.path": "",
-  "[java]": {},
-  "explorer.confirmDragAndDrop": false,
-  "python.venvPath": "${workspaceFolder}/env",
-  "python.pythonPath": "/usr/bin/python",
-  "gitlens.codeLens.enabled": false,
-  "editor.showFoldingControls": "always",
-  //   "editor.codeActionsOnSave": {
-  //     "source.organizeImports": true
-  //   },
-  "workbench.colorCustomizations": {
-    "editorLineNumber.foreground": "#FD3A07",
-    "editorLineNumber.activeForeground": "#4FFD07"
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.renderWhitespace": "boundary",
-  "editor.renderIndentGuides": true,
-  "workbench.editor.highlightModifiedTabs": true
+  // Other
+  "javascript.suggest.names": false
 }
