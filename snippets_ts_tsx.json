@@ -1,0 +1,71 @@
+{
+	// General
+	"Import default": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "_id",
+		"body": [
+			"import $2 from \"$1\""
+		],
+		"description": "Default es6 import"
+	},
+	"Import export": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "_ie",
+		"body": [
+			"import { $2 } from \"$1\""
+		],
+		"description": "Import exported item"
+	},
+	"Export default": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "_ed",
+		"body": [
+			"export default $1;"
+		],
+	},
+	"Arrow function": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "_=>",
+		"body": [
+			"const $1 = (): $2 => {",
+			"  return (",
+			"    <div>",
+			"      <div></div>",
+			"    </div>$3",
+			"  );",
+			"};"
+		]
+	},
+	"Export Arrow function": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "_e=>",
+		"body": [
+			"export const $1 = (): $2 => {",
+			"  return (",
+			"    <div>",
+			"      <div></div>",
+			"    </div>$3",
+			"  );",
+			"};"
+		]
+	},
+	"interface": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "_itf",
+		"body": [
+			"interface $1 {",
+			"  $2",
+			"}"
+		]
+	},
+	// React
+	"React.useEffect": {
+		"scope": "typescriptreact",
+		"prefix": "_useeffect",
+		"body": [
+			"React.useEffect((): $1 => {",
+			"  $2",
+			"}, [$3])$4"
+		]
+	}
+}
