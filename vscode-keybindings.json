@@ -1,4 +1,3 @@
-// Place your key bindings in this file to overwrite the defaults
 [
   {
     "key": "cmd+k cmd+z",
@@ -29,12 +28,19 @@
     "command": "actions.find"
   },
   {
-    "key": "cmd+k cmd+right",
-    "command": "workbench.action.moveActiveEditorGroupRight"
+    "key": "cmd+;",
+    "command": "workbench.action.gotoLine"
   },
   {
-    "key": "cmd+k cmd+left",
-    "command": "workbench.action.moveActiveEditorGroupLeft"
+    "key": "cmd+shift+s cmd+shift+r",
+    "command": "workbench.action.splitEditorRight"
   },
-  { "key": "cmd+;", "command": "workbench.action.gotoLine" }
+  {
+    "key": "cmd+shift+s cmd+shift+d",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.revealDefinition"
+  },
 ]
