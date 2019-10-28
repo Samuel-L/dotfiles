@@ -1,0 +1,100 @@
+{
+	// Python general
+	"Breakpoint": {
+		"prefix": "_bp",
+		"body": [
+			"import pdb; pdb.set_trace()"
+		],
+		"description": "Insert a breakpoint at cursor location."
+	},
+	"IBreakpoint": {
+		"prefix": "_ibp",
+		"body": [
+			"import ipdb; ipdb.set_trace()"
+		],
+		"description": "Insert a breakpoint at cursor location."
+	},
+	"From MODULE import THING": {
+		"prefix": "_fi",
+		"body": [
+			"from ${1:module} import ${2:thing}"
+		],
+		"description": "From MODULE import THING"
+	},
+	"import MODULE": {
+		"prefix": "_i",
+		"body": [
+			"import ${1:module}"
+		],
+		"description": "import MODULE"
+	},
+	// DRF Specific
+	"Serializer": {
+		"prefix": "_srlzr",
+		"body": [
+			"class ${1:name}Serializer(serializers.${2|ModelSerializer,Serializer|}):",
+			"    class Meta:",
+			"        model = ${3:model}",
+			"        fields = ('${4:fields}',${0})"
+		],
+		"description": "DRF Serializer"
+	},
+	"Endpoint test with imports": {
+		"prefix": "_e-test-w-imports",
+		"body": [
+			"from django.test import tag",
+			"from django.urls import reverse",
+			"",
+			"from common.tests.helpers import EndpointTestHelper",
+			"",
+			"",
+			"@tag('integration')",
+			"class Test${1:name}(EndpointTestHelper):",
+			"	def setUp(self):",
+			"		super(Test${1:name}, self).setUp()",
+			"",
+			"	def test_${2:test}(self):",
+			"		pass"
+		]
+	},
+	"Endpoint test without imports": {
+		"prefix": "_e-test",
+		"body": [
+			"@tag('integration')",
+			"class Test${1:name}(EndpointTestHelper):",
+			"	def setUp(self):",
+			"		super(Test${1:name}, self).setUp()",
+			"",
+			"	def test_${2:test}(self):",
+			"		pass"
+		]
+	},
+	"Django test with imports": {
+		"prefix": "_d-test-w-imports",
+		"body": [
+			"from django.test import TestCase, tag",
+			"from django.urls import reverse",
+			"",
+			"",
+			"@tag('coding')",
+			"class Test${1:name}(TestCase):",
+			"	def setUp(self):",
+			"		super(Test${1:name}, self).setUp()",
+			"",
+			"	def test_${2:test}(self):",
+			"		pass"
+		]
+	},
+	"Django test without imports": {
+		"prefix": "_d-test",
+		"body": [
+			"@tag('coding')",
+			"class Test${1:name}(TestCase):",
+			"	def setUp(self):",
+			"		super(Test${1:name}, self).setUp()",
+			"",
+			"	def test_${2:test}(self):",
+			"		pass"
+		]
+	},
+}
