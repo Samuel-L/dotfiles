@@ -9,14 +9,9 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'SirVer/ultisnips'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'sheerun/vim-polyglot'
-Plugin 'trevordmiller/nova-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,15 +39,6 @@ set autoread
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
-
-" Fast saving
-nmap <leader>w :w!<cr>
-
-" Fast exit
-nmap <leader>q :q<cr>
-
-" Exit insert mode keybind
-inoremap jj <Esc>
 
 " Highlight current line
 set cursorline
@@ -100,7 +86,6 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-colorscheme nova
 set background=dark
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -148,23 +133,3 @@ au BufNewFile,BufRead *.js,*.jsx,*.html,*.css,*.scss,*.json,*.ts,*.php:
 
 set backspace=indent,eol,start " backspace support
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => SimplyFold (plugin)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:SimpylFold_docstring_preview=1
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => UltiSnips (plugin)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => NERDTree (plugin)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-
-" GIT
-autocmd Filetype gitcommit setlocal spell textwidth=72
